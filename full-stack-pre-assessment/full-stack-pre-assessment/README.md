@@ -12,4 +12,4 @@
 
 #### Learnings:
 - className can include multiple
-- usage of <aside>
+- usage of aside tag
