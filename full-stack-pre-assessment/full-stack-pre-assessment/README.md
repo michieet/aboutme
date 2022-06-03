@@ -17,3 +17,6 @@
 - npm install
 
 ### Libraries Used
+
+#### Learnings:
+- className can include multiple
