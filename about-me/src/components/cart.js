@@ -37,7 +37,7 @@ export default function Cart(props) {
             ))}
             {cartItems.length !== 0 && (
                 <>
-                    <hr>
+                    <hr></hr>
                         <div className='row'>
                             <div className='col-2'>Items Price</div>
                             <div className='col-1 text-right'>${itemsPrice.toFixed(2)}</div>
@@ -58,7 +58,7 @@ export default function Cart(props) {
                                 <strong>${totalPrice.toFixed(2)}</strong>                           
                             </div>
                         </div>
-                    </hr>
+                    <hr/>
                     <div className='row'>
                         {/* Implement alert for checkout */}
                         <button onClick={() => alert('Checkout!')}>

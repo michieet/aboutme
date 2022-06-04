@@ -6,19 +6,19 @@ const data = {
     products: [
         {
             id: '1',
-            name: '',
+            name: 'Cake',
             price: 28,
             image: Cake
         },
         {
             id: '2',
-            name: '',
+            name: 'Pasta',
             price: 16,
             image: Pasta
         },
         {
             id: '3',
-            name: '',
+            name: 'Scallion Pancake',
             price: 6,
             image: Scallion
         },
