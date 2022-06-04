@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Header></Header>
+      <Header countItems={cartItems.length}></Header>
       <div className='row'>
         {/* Main component will be the one rendering 'products' */}
         <Main 

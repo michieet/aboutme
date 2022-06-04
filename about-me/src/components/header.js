@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Header(props) {
 
+    const {countItems} = props;
+
     return (
         <header className='row block center'>
             <div>
@@ -10,7 +12,14 @@ export default function Header(props) {
                 </a>
             </div>
             <div>
-                <a href='#/cart'>Cart</a> <a href='#/signin'>SignIn</a>
+                <a href='#/cart'>
+                    Cart {' '}
+                    {/* If exists then render button, otherwise render empty string */}
+                    {countItems ? (
+                        <button className='badge'>{countItems}</button>
+                    ) : ('')}
+                </a>{' '}              
+                <a href='#/signin'>SignIn</a>
             </div>
         </header>
     );
