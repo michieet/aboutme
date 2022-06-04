@@ -14,3 +14,6 @@
 - className can include multiple
 - usage of aside tag
 - usage of strong tag
+
+##### References:
+- Coding with Basir
