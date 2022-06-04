@@ -2,8 +2,8 @@ import React from 'react';
 import Product from './product';
 
 export default function Main(props) {
-
-    const {products} = props;
+    
+    const {products, onAdd} = props;
     
     return (
         <main className='block col-2'>
@@ -11,7 +11,7 @@ export default function Main(props) {
             <div className='row'>
                 {products.map((product) => (
                     // Need to use 'key' because then .map can identify.
-                    <Product key={product.id} product={product}></Product>
+                    <Product key={product.id} product={product} onAdd={onAdd}></Product>
                 ))}
             </div>
         </main>
