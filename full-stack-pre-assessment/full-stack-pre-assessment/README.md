@@ -13,3 +13,4 @@
 #### Learnings:
 - className can include multiple
 - usage of aside tag
+- usage of strong tag
