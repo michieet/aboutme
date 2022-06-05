@@ -2,14 +2,30 @@ import './App.css';
 import Header from './components/header';
 import Main from './components/main';
 import Cart from './components/cart';
-import data from './data';
-import { useState } from 'react';
+// import data from './data';
+import { useEffect, useState } from 'react';
 
 function App() {
 
-  const {products} = data;
+  // const {products} = data;
 
+  const [fakeProducts, setFakeProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
+
+    //useEffect hook to handle updates. 
+    useEffect(() => {
+      fakeAPI();
+    }, []);  
+
+  const fakeAPI = async () => {
+    const res = await fetch('https://fakestoreapi.com/products');
+    console.log(res);
+    //Converting data to JSON;
+    const jsonData = await res.json();
+    console.log(jsonData);
+    setFakeProducts(jsonData);
+  };
+  // fakeAPI(jsonData);
 
   const onAdd = (product) => {
     //Finding whether the exact item exists
@@ -46,7 +62,7 @@ function App() {
         {/* Main component will be the one rendering 'products' */}
         <Main 
           onAdd={onAdd} 
-          products={products}>  
+          products={fakeProducts}>  
         </Main>
         <Cart 
           onAdd={onAdd} 
