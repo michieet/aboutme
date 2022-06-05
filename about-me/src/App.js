@@ -2,8 +2,16 @@ import './App.css';
 import Header from './components/header';
 import Main from './components/main';
 import Cart from './components/cart';
-// import data from './data';
 import { useEffect, useState } from 'react';
+import {
+  BrowserRouter,
+  NavLink,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+// import data from './data';
+
 
 function App() {
 
@@ -58,21 +66,25 @@ function App() {
   }
 
   return (
-    <div className='App'>
-      <Header countItems={cartItems.length}></Header>
-      <div className='row'>
-        {/* Main component will be the one rendering 'products' */}
-        <Main 
-          onAdd={onAdd} 
-          products={fakeProducts}>  
-        </Main>
-        <Cart 
-          onAdd={onAdd} 
-          onRemove={onRemove} 
-          cartItems={cartItems}>
-        </Cart>
+    <BrowserRouter>
+
+      <div className='App'>
+        <Header countItems={cartItems.length}></Header>
+        <div className='row'>
+          {/* Main component will be the one rendering 'products' */}
+          <Main 
+            onAdd={onAdd} 
+            products={fakeProducts}>  
+          </Main>
+          <Cart 
+            onAdd={onAdd} 
+            onRemove={onRemove} 
+            cartItems={cartItems}>
+          </Cart>
+        </div>
       </div>
-    </div>
+      
+    </BrowserRouter>
   );
 }
 
