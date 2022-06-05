@@ -19,7 +19,7 @@ export default function Header(props) {
                         <button className='badge'>{countItems}</button>
                     ) : ('')}
                 </a>{' '}              
-                <a href='#/signin'>SignIn</a>
+                <a href='#/aboutme'>About Me</a>
             </div>
         </header>
     );

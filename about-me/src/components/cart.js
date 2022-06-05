@@ -19,7 +19,7 @@ export default function Cart(props) {
             {/* For each item, render a <div>, set key to prevent unique error. */}
             {cartItems.map((item) => (
                 <div key={item.id} className='row'>
-                    <div className='col-2'>{item.name}</div>
+                    <div className='col-2'>{item.title}</div>
                     <div className='col-2'>
                         {/* Use arrow-fn to pass item to the add-fn */}
                         <button onClick={()=>onAdd(item)} className='add'>

@@ -12,11 +12,13 @@ function App() {
   const [fakeProducts, setFakeProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
-    //useEffect hook to handle updates. 
-    useEffect(() => {
-      fakeAPI();
-    }, []);  
+  //useEffect hook to handle updates. 
+  //QN: Does it matter if useEffect code is written above or below the fetching of API?
+  useEffect(() => {
+    fakeAPI();
+  }, []);  
 
+  //Fetch fakestoreapi products
   const fakeAPI = async () => {
     const res = await fetch('https://fakestoreapi.com/products');
     console.log(res);

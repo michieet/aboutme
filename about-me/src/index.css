@@ -44,6 +44,17 @@ a {
   border-radius: 0.5rem;
 }
 
+.box {
+  background-color: rgb(177, 160, 160);
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 20rem;
+}
+
 .row.center {
   align-items: center;
 }
