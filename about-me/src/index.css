@@ -42,17 +42,17 @@ a {
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
+  
 }
 
 .box {
-  background-color: rgb(177, 160, 160);
+  background-color: rgb(184, 151, 151);
   padding: 1rem;
   margin: 0 auto;
   border-radius: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 20rem;
+  display: grid;
+  justify-content: space-around;
+  width: 40rem;
 }
 
 .row.center {
@@ -61,6 +61,7 @@ a {
 
 img.small {
   max-height: 8rem;
+  margin: auto;
 }
 
 button {
@@ -70,7 +71,7 @@ button {
   border-radius: 0.5rem;
   border: 0.1rem #404040 solid;
   background-color: #807272;
-  width: 100%;
+  max-width: 100%;
   cursor: pointer;
 }
 
