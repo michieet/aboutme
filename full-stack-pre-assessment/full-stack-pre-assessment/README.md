@@ -29,3 +29,4 @@ Display products within https://fakestoreapi.com, and include the functionality 
 - Coding with Basir
 - Web Dev Simplified
 - The NET Ninja
+- w3schools
