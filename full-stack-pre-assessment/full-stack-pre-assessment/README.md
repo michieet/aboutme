@@ -22,7 +22,10 @@ Display products within https://fakestoreapi.com, and include the functionality 
 - className can include multiple
 - usage of aside tag
 - usage of strong tag
+- Understanding difference between react-router-domv5 vs v6
 
 ##### References:
 
 - Coding with Basir
+- Web Dev Simplified
+- The NET Ninja
