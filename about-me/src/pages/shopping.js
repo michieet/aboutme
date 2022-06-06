@@ -2,6 +2,7 @@ import Header from '../components/header';
 import Main from '../components/main';
 import Cart from '../components/cart';
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 // import data from './data';
 
 
@@ -61,17 +62,22 @@ const onRemove = (product) => {
         <div>
             <Header countItems={cartItems.length}></Header>
                 <div className='row'>
-                    {/* Main component will be the one rendering 'products' */}
-                    <Main 
-                    onAdd={onAdd} 
-                    products={fakeProducts}>  
-                    </Main>
-
-                <Cart 
-                    onAdd={onAdd} 
-                    onRemove={onRemove} 
-                    cartItems={cartItems}>
-                </Cart>
+                    <div>
+                        {/* Main component will be the one rendering 'products' */}
+                        <Main 
+                            onAdd={onAdd} 
+                            products={fakeProducts}>  
+                        </Main>
+                        {/* Trying to implement link to product details in product page */}
+                        <Link to={`/products/${fakeProducts.id}`}>
+                            {/* {product.id} */}
+                        </Link>
+                    </div>
+                    <Cart 
+                        onAdd={onAdd} 
+                        onRemove={onRemove} 
+                        cartItems={cartItems}>
+                    </Cart>
                 </div>
         </div>
     );
