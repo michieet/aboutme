@@ -1,11 +1,12 @@
 import React from 'react';
-  
+
+ //Links are being directed from here instead 
 
 export default function Header(props) {
 
     const {countItems} = props;
 
-    return (
+    return (  
             <header className='row block center'>
                 <div>
                     <a href='/'>
@@ -20,7 +21,7 @@ export default function Header(props) {
                             <button className='badge'>{countItems}</button>
                         ) : ('')}
                     </a>{' '}              
-                    <a href='/aboutme'>About Me</a>
+                    <a href='/aboutme'>About Me</a>{' '}
                     <a href='/shopping'>Shop Here</a>
                 </div>
             </header>

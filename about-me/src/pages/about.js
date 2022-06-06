@@ -16,7 +16,7 @@ export default function About() {
             <div className="container">
                 <a href='/'>Home</a>
             <h1>About</h1>
-                <div className="abtcontainer">
+                <div className="container">
                     <FlashcardList flashcards={flashcards}/>
                 </div>
             </div>
