@@ -34,3 +34,4 @@ Display products within https://fakestoreapi.com, and include the functionality 
 - Web Dev Simplified
 - The NET Ninja
 - w3schools
+- Laith Academy
