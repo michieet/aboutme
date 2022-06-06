@@ -29,6 +29,7 @@
             padding-bottom: 5%;
             padding: 5px;
             margin-bottom: 2%;
+            max-height: 100px;
         }
 
         .topnav{
@@ -45,6 +46,14 @@
             color:rgb(26, 182, 182);
         }
 
+        .leftnav {
+            justify-content: flex-end;
+        }
+
+        .rightnav {
+            display: inline-block;
+        }
+
     </style>
 </head>
 <body>
@@ -52,15 +61,15 @@
     <div class="font">
         <!-- Looking at the design, it seemed that it'd make more sense if I group left logo with search bar and right logo with user. -->
         <div class="topnav">
-            <div>
-                <i class="fas fa-bread-slice"></i>
+            <div class="leftnav">
+                <i class="fas fa-bread-slice" style='font-size:36px'></i>
                 <input 
                     type="text" 
                     placeholder="Search..."
                 >
             </div>
-            <div>
-                <i class="fas fa-pizza-slice"></i>
+            <div class="rightnav">
+                <i class="fas fa-pizza-slice" style='font-size:24px'></i>
                 <p>Anonymous user</p>
             </div>
             
