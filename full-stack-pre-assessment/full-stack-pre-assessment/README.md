@@ -25,6 +25,7 @@ Display products within https://fakestoreapi.com, and include the functionality 
 - Understanding difference between react-router-domv5 vs v6
 - Using of 'rfc' by installing ES7 React/Redux/GraphQL/ReactNative extension (saves coding of boilerplate time)
 - Writing conditions in classNames
+- Using of backface-visibility and transform 
 
 ##### References:
 
