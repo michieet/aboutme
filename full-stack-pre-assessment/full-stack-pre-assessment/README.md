@@ -16,6 +16,7 @@ Display products within https://fakestoreapi.com, and include the functionality 
 ### Libraries Used
 
 - npm i react-router-dom
+- npm i lodash
 
 #### Learnings:
 
