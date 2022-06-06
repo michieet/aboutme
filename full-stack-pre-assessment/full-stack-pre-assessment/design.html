@@ -26,7 +26,8 @@
             width: 32%;
             background-color: aliceblue;
             border-radius: 5%;
-            padding-bottom: 18%;
+            padding-bottom: 5%;
+            padding: 5px;
             margin-bottom: 2%;
         }
 
@@ -37,31 +38,32 @@
             background-color: #ffffff;
         }
 
-        /* .topnav a {
-            float: left;
-            display: block;
-            color: #e9e9e9;
-            border-color: #e9e9e9;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        } */
+        .smalltext {
+            display: flex;
+            justify-content: space-between;
+            bottom: 10px;
+            color:rgb(26, 182, 182);
+        }
+
     </style>
 </head>
 <body>
 
     <div class="font">
+        <!-- Looking at the design, it seemed that it'd make more sense if I group left logo with search bar and right logo with user. -->
         <div class="topnav">
-
-            <i class="fas fa-bread-slice"></i>
-            <input 
-                type="text" 
-                placeholder="Search..."
-            >
-            <i class="fas fa-pizza-slice"></i>
-            <p>Anonymous user</p>
-
+            <div>
+                <i class="fas fa-bread-slice"></i>
+                <input 
+                    type="text" 
+                    placeholder="Search..."
+                >
+            </div>
+            <div>
+                <i class="fas fa-pizza-slice"></i>
+                <p>Anonymous user</p>
+            </div>
+            
         </div>
 
         <div class="container">
@@ -77,38 +79,71 @@
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <!-- Am grouping these two together for now, but would have made the icon and text in separate divs -->
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                    <p style="font-size:small">Two days ago</p>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                    <p style="font-size:small">Two days ago</p>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                    <p style="font-size:small">Today</p>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                    <p style="font-size:small">Two days ago</p>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                    <p style="font-size:small">Yesterday</p>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                </div>
             </div>
             <div class="item">
                 <b style="color:rgb(151, 161, 161)">Nougat</b>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="smalltext">
+                    <i class="fas fa-egg"></i>
+                </div>
             </div>
 
         </div>
