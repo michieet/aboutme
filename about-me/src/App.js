@@ -10,6 +10,7 @@ import {
 import Home from './pages/home';
 import About from './pages/about';
 import Shopping from './pages/shopping';
+import Cartpage from './pages/cartpage';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route path='/' element={<Home/>}></Route>
               <Route path='/aboutme' element={<About/>}></Route>
               <Route path='/shopping' element={<Shopping/>}></Route>
+              <Route path='/cartpage' element={<Cartpage/>}></Route>
             </Routes>
         </div>
 

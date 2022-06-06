@@ -1,5 +1,18 @@
 body {
     background-color: rgb(223, 182, 182);
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 1rem 2rem;
+}
+
+.card-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .card {
@@ -10,8 +23,24 @@ body {
     border-radius: 0.25rem;
     box-shadow: 0 0 5px 2px rgb(133, 120, 120);
     background-color: rgb(122, 105, 105);
-    height: 150px;
-    width: 150px;
+    /* Set to 0 because then in the flip styling you can set it to any degree. */
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+    transform-style: preserve-3d;
+    transition: 150ms;
+    cursor: pointer;
+}
+
+.card:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgb(85, 75, 75);
+}
+
+.card.flip {
+    --rotate-y: 180deg;
+}
+
+.card .front{
+    left: 0;
 }
 
 .card .front,
@@ -23,4 +52,18 @@ body {
 
 .card .back {
     transform: rotateY(180deg);
+}
+
+.flashcard-opts {
+    margin-top: .5rem;
+}
+
+.flashcard-opt {
+    margin-top: .25rem;
+    color: rgb(58, 57, 57);
+    font-size: .75rem;
+}
+
+.flashcard-opt:first-child {
+    margin-top: 0;
 }

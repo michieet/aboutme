@@ -13,7 +13,7 @@ export default function Header(props) {
                     </a>
                 </div>
                 <div>
-                    <a href='/cart'>
+                    <a href='/cartpage'>
                         Cart {' '}
                         {/* If exists then render button, otherwise render empty string */}
                         {countItems ? (
