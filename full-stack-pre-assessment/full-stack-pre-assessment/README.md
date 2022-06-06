@@ -1,12 +1,16 @@
 # Technical Assignment
 
-## Assignment 1 - About Me
+## Assignment 1 - Design.html
 
-Snippets about me in cards format, done with HTML and CSS.
+Implement design.html (in full-stack folder), done with HTML and CSS.
 
 ## Assignment 2 - Shopping Cart
 
 Display products within https://fakestoreapi.com, and include the functionality of adding/ removing items, as well as sum total price.
+
+## Extra tidbits - About Me
+
+Snippets about me, experimenting on different stylings/ rotations.
 
 ### How to run
 
